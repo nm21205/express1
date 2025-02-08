@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+section#introduction {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/img/movie.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(1px);
+
+  }
+
+
+
+  h2 {
+      -webkit-text-stroke: 1px #000000;
+      color: #ffffff;
+    font-size: 50px;
+    z-index: 1;
+    animation: fadeInDown 1s ease-out;
+    font-family: 'SBAggroB';
+  }
+
+  p {
+    -webkit-text-stroke: 1px #000000;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out;
+    font-family: 'SBAggroB';
+    
+   
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 모바일 버전 스타일
+@media (max-width: 1200px) {
+  // 모바일에 맞게 스타일 조정
+  section#introduction{
+    
+    margin-top:90px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+} 
+
+@media (max-width: 600px) {
+  section#introduction{
+    
+    margin-top:90px;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
