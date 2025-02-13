@@ -25,6 +25,7 @@ body {
 
 section {
   padding: 60px 20px;
+  margin-top: 0; /* 섹션 간의 기본 마진 제거 */
 }
 
 header {
@@ -76,6 +77,7 @@ section#estimates,
 section#checklist,
 section#contact {
   padding-top: 80px; /* 헤더 높이에 맞춰 조정 */
+  margin-bottom: 0; /* 섹션 간의 기본 마진 제거 */
 }
 
 @media (max-width: 600px) {

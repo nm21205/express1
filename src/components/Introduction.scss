@@ -49,7 +49,6 @@ section#introduction {
     color:rgb(255, 255, 255);
     font-size: 30px;
     max-width: 800px;
-    margin: 10px auto;
     line-height: 1.6;
     animation: fadeInUp 1s ease-out;
     font-family: 'SBAggroB';
@@ -83,25 +82,24 @@ section#introduction {
 // 모바일 버전 스타일
 @media (max-width: 1200px) {
   // 모바일에 맞게 스타일 조정
-  section#introduction{
-    
-    margin-top:90px;
+  section#introduction {
+    margin-top: 300px; // 헤더 높이만큼 마진 추가
     flex-direction: column;
     align-items: center;
     font-size: 14px;
-    h2{
+    h2 {
       font-size: 40px;
     }
-    p{
+    p {
       font-size: 25px;
     }
   }
-} 
+}
 
 @media (max-width: 600px) {
   section#introduction{
     
-    margin-top:90px;
+    margin-top:340px;
     flex-direction: column;
     align-items: center;
 
